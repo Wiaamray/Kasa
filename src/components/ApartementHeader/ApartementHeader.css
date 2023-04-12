@@ -1,0 +1,124 @@
+.accomodation__header{
+    margin-top: 11rem;
+    display: flex;
+    margin-bottom:2rem;
+ 
+}
+
+.accomodation__header  > * {
+
+    /* border: 3px solid #F6F6F6; */
+
+    }
+
+    .accomodation__owner{
+        display: flex;
+        flex-direction: column;
+    }
+
+.accomodation__owner h3{
+     margin-block: 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;  
+}
+
+
+.accomodation__owner_details{
+    align-items: flex-end;
+    display: flex;
+    gap: 0 10px;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+
+.accomondation__owner__badge img{
+   
+    height:64px;
+    width:64px;
+    border-radius:50%;
+    background-color: #C4C4C4;
+    border: 3px solid #C4C4C4;
+    
+}
+
+.accomodation__stars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.2rem;  
+}
+
+
+.accomodation__stars .star__full{
+    background-image: url(../../assets/Vector-stars-full.png);
+    background-repeat: no-repeat;
+    color: #ff6060;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-block:0.1rem;
+}
+
+
+.accomodation__stars .star__empty{
+    background-image: url(../../assets/Vector-stars-empty.png);
+    background-repeat: no-repeat;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-block:0.1rem;
+}
+
+/*Responsive mobile*/
+@media screen and (width<=768px){
+
+    .accomodation__header{
+        margin:0;
+    }
+
+.accomodation__owner{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.accomondation__owner__badge img{
+   
+    height:32px;
+    width:32px;
+}
+
+.accomodation__owner h3{
+
+font-size: 12px;
+
+}
+
+.accomodation__stars{
+/* width: 13px;
+height:13px; */
+
+
+}
+
+.accomodation__stars .star__full{
+
+ background-image: url(../../assets/Vector-stars-full-mobile.png);
+ background-repeat: no-repeat;
+ Width:13px;
+ Height: 13px ;
+  
+}
+
+
+.accomodation__stars .star__empty{
+
+    background-image: url(../../assets/Vector-stars-empty-mobile.png);
+ background-repeat: no-repeat;
+ Width:13px;
+ Height: 13px ;
+}
+
+
+}

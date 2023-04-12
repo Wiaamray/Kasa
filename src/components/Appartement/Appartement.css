@@ -1,0 +1,45 @@
+.appartement {
+  border-radius: 1rem;
+  flex-direction: column;
+  flex-basis: 30%;
+  align-items: end;
+  min-width: 200px;
+  min-height: 200px;
+  position: relative;
+}
+
+.appartement img {
+  width: 21.25rem;
+  height: 21.25rem;
+  border-radius: 0.625rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.appartement__subtitle {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  color: #fff;
+  width: 18.75rem;
+  height: 3.25rem;
+  line-height: 142.6%;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+/*Responsive mobile*/
+@media screen and (width <= 768px) {
+  .appartement {
+    flex-basis: 100%;
+    background-color: #fff;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .appartement__subtitle {
+    width: 80%;
+    line-height: 25.67px;
+    font-size: 18px;
+  }
+}

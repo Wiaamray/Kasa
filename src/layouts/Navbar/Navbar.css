@@ -1,0 +1,59 @@
+.navbar
+{
+	align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 68px;
+    justify-content: space-between;
+    margin: 30px auto 0;
+    max-width: 1240px;
+	color: #ff6060;
+    font-weight: 700;
+    gap: 2rem;
+}
+
+/* N'importe quelle élément à l'intérieur de navbar à le firstchild (applicable aux enfants direct)*/
+.navbar > *:first-child
+{
+	margin-right:auto;
+}
+
+.navbar a :hover
+{
+	text-decoration: underline;
+}
+
+.navbar a.active
+{
+	text-decoration: underline;
+}
+
+.navbar a
+{
+	text-decoration: none;
+	color: #ff6060;
+	font-size: 24px;
+}
+
+@media screen and (width<= 768px)
+{
+	.navbar
+	{
+		margin: auto;
+		text-transform: uppercase;
+		border: none;
+		margin-right: 6%;
+	}
+
+
+	.navbar__logo img
+	{
+		padding-left: 20px;
+		width: 145px;
+	}
+
+	.navbar a
+	{
+		font-size:12px;
+	} 
+}

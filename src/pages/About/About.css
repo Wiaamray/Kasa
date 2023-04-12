@@ -1,0 +1,52 @@
+
+.container__description{
+    padding-inline: 3rem;
+}
+
+.about__container{
+    max-width: 1240px;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.about__banner{
+
+    margin-top:33px;
+    height: 223px;
+    object-fit: cover;
+    border-radius:2rem;
+    display: grid;
+    place-items: center;
+    color:#fff;
+    margin-bottom: 2rem;
+}
+
+
+
+
+/*Responsive mobile*/
+@media screen and (width<=768px){
+
+    .about__container{
+   padding-inline: 1rem;
+    }
+
+    .about__banner{
+
+        border-radius: 10px;
+        height: 223px;
+        margin-top: 0;
+        width: 100%;
+    }
+   
+
+    .container__description{
+        padding-inline: 0;
+    
+    }
+    
+    
+}

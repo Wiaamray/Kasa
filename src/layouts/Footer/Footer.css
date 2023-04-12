@@ -1,0 +1,37 @@
+
+
+.footer{
+
+    background-color: black;
+    color: white;
+ 
+    text-align:center;
+    /* Centrer verticalement */
+    display: grid;
+    place-items: center;
+    bottom: 0;
+    height: 209px;
+    left: 0;
+    margin: auto;
+    max-width: 1240px;
+    right: 0;
+
+}
+
+.footer__text{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+/*Responsive mobile*/
+@media screen and (width <= 768px){
+   
+    .footer{
+        flex-basis: 100%;
+        height: 209px;
+      
+    }
+ }

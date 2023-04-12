@@ -1,0 +1,120 @@
+.apartment__banner {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.image__container{
+    position: relative;
+    height: 20rem;
+    width: 100%;
+}
+
+.apartment__banner img{
+
+    max-width: 100%;
+    height: 415px; 
+    /* height: 100%; */
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: rgba(149 157 165 / 20%) 0px 8px 24px;
+    opacity: 0;
+    transition: 0.5s;
+    margin: 43px auto;
+
+}
+
+.show{
+    opacity: 1 !important;
+}
+
+ .chevron-next{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom:0;
+     right: 0;
+     margin-top:12rem;
+    width: 5rem;
+    color: red;
+    background-color: transparent;
+    font-size: 3rem;
+    border-width: 0;
+     z-index: 10;
+     background-image: url(../../assets/chevron-right.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+}
+
+.chevron-previous{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom:0;
+    left: 0;
+    margin-top:12rem;
+    width: 5rem;
+    color: red;
+    background-color: transparent;
+    font-size: 3rem;
+    border-width: 0;
+     z-index: 10;
+    background-image: url(../../assets/chevron-left.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide__counter{
+position: absolute;
+bottom:0;
+color: #fff;
+font-size: 1.5rem;
+font-weight: 500;
+width:100%;
+bottom:1rem;
+display: flex;
+/* height: 15%; */
+ bottom:-35%; 
+justify-content: center;
+
+}
+
+
+
+/*Responsive mobile*/
+@media screen and (width <= 768px){
+   
+  
+    .apartment__banner img{
+ 
+     height: 225px; 
+ 
+    }
+
+    .slide__counter{
+        display: none;
+    }
+
+
+    .chevron-previous {
+
+        margin-left: -19px;
+        top: -45%;
+        background-image: url(../../assets/chevron-left-mobile.png);
+
+ }
+
+ .chevron-next {
+
+    margin-right: -19px;
+    top: -45%;
+    background-image: url(../../assets/chevron-right-mobile.png);
+}
+
+.image__container{
+
+    height: 15rem;
+}
+
+}

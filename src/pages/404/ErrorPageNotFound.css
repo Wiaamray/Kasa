@@ -1,0 +1,50 @@
+
+.page-404 {
+    text-align: center;
+  }
+  
+
+.titre-404{
+
+    color: #ff6060;
+    font-size: 288px;
+    margin: auto;
+}
+
+
+.description-404{
+font-size: 36px;
+font-weight: 500;
+color: #ff6060;
+margin-bottom:  5em;
+}
+
+.linkhome{
+  
+    color: #ff6060;
+    font-size: 18px;
+    margin-top:5rem;
+   
+}
+
+
+
+@media screen and (width<=768px){
+
+    .titre-404{
+
+      margin-top:9rem;
+      font-size: 96px;
+
+    }
+    
+   .description-404{
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .linkhome {
+      font-size: 14px;
+      margin-top:5rem;
+    }
+  }
