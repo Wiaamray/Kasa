@@ -6,27 +6,20 @@ import Main from "./components/Main.js";
 import Banner from "./components/Banner.js";
 import AccommodationGrid from "./components/AccommodationGrid.js";
 import Footer from "./components/Footer.js";
-
 import "./App.css";
-
 
 function App() {
   return (
+    <div>
+      <Navbar />
 
-<div>
+      <Main>
+        <Banner />
+        <AccommodationGrid />
+      </Main>
 
-<Navbar />
-
-  <Main>
-  <Banner />
-  <AccommodationGrid />
-  </Main>
-  
-  <Footer />
- 
-  
-</div>
-
+      <Footer />
+    </div>
   );
 }
 

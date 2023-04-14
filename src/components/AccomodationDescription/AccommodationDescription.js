@@ -1,33 +1,30 @@
-import React, {useState} from 'react'
-import "./AccommodationDescription.css"
+import React, { useState } from "react";
+import "./AccommodationDescription.css";
 
 export function AccommodationDescription(props) {
+  const [isContentVisible, setIsContentVisible] = useState(true);
 
-const [isContentVisible, setIsContentVisible] = useState(false);
-
-const showContent = () =>{
-  setIsContentVisible(!isContentVisible);
-};
-
-
+  const showContent = () => {
+    setIsContentVisible(!isContentVisible);
+  };
 
   return (
-
-      <div className="Accomodation__description">
-    <p className='description__header'>
+    <div className="Accomodation__description">
+      <p className="description__header">
         <span>{props.title}</span>
 
-        <span className={'chevron '+ (isContentVisible ? "chevron-up" : "chevron-down") }
-              onClick={showContent}>
-        </span>
-    </p>
+        <span
+          className={
+            "chevron " + (isContentVisible ? "chevron-up" : "chevron-down")
+          }
+          onClick={showContent}
+        ></span>
+      </p>
 
-
- {isContentVisible && <p className=" description__content">{props.content}</p>}
- 
-</div>
-
-
+      {isContentVisible && (
+        <p className=" description__content">{props.content}</p>
+      )}
+    </div>
   );
 }
 

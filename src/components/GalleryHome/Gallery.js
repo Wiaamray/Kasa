@@ -4,10 +4,9 @@ import "./Gallery.css";
 import Appartement from "../Appartement/Appartement.js";
 
 
+function Gallery() {
 
-function AccommodationGrid() {
-
-  const [apartments, setApartements] = useState([]);
+const [apartments, setApartements] = useState([]);
 
 //useEffect avec une array vide == exécute cette fonction au chargement du composant
 useEffect(fetchApartements, []);
@@ -28,12 +27,9 @@ fetch ("logements.json")
     <Appartement key={apartment.id} id={apartment.id} title={apartment.title} imageUrl={apartment.cover} />
  ))}
 
-   
-  
   </div>
 
   );
-  
 }
 
-export default AccommodationGrid;
+export default Gallery;
