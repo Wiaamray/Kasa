@@ -30,7 +30,7 @@ const HeaderFooterLayout = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <HeaderFooterLayout />,
     errorElement: <ErrorPageNotFound />,
 
@@ -51,7 +51,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+],
+    {
+      basename: '/Kasa'
+    });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

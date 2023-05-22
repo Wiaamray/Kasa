@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../Navbar/Navbar.css";
+import logo from '../../assets/LOGO.png';
 
 /*Une fonction qui prend en paramètre isActive , donc si active nous donne un activestyle*/
 function Navbar() {
@@ -15,7 +16,7 @@ function Navbar() {
     <nav className="navbar">
       <NavLink to="/">
         <div className="navbar__logo">
-          <img src="LOGO.png" alt="logo" width="210" />
+          <img src={logo} alt="logo" width="210" />
         </div>
       </NavLink>
 
